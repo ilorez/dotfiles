@@ -1,4 +1,4 @@
-<h1 align="center">ericmurphyxyz/dotfiles</h1>
+<h1 align="center">dotfiles</h1>
 
 <img src="/.github/screenshots/desktop.png" width="100%" />
 
@@ -31,6 +31,3 @@ If you'd like a more in-depth list of all the software and hardware I use on a d
 
 Most config files for various programs can be found in the `.config` directory. Shell scripts can be found in the `.local/bin` directory. Environment variables can be found in `.zshenv`.
 
-## Where's all of your old config files?
-
-I'm now using Wayland instead of Xorg. I've done a lot of videos before about Xorg, so if you're looking for old config files that may not be there anymore, you can take a look at the [`xorg` tag](https://github.com/ericmurphyxyz/dotfiles/tree/xorg) for my old, unmaintained Xorg config files.
