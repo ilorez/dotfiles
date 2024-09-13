@@ -114,8 +114,8 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# lock screen (i3lock)
-bindsym $mod+Escape exec --no-startup-id i3lock
+# lock screen (i3lock) with background
+bindsym $mod+Escape exec --no-startup-id i3lock -c 000000  -i "/home/ilorez/Documents/w1.png"
 # focus the child container
 #bindsym $mod+d focus child
 
