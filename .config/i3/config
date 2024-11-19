@@ -54,7 +54,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
+# i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -167,8 +168,17 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+b exec firefox
 bindsym $mod+c exec code
 
-# Increase brightness
+# gaps between windows
+set $default_gaps 1
+gaps inner $default_gaps 
+#gaps outer current plus $default_gaps
 
+# windows round corners
+for_window [class="^.*"] border pixel 2
+smart_borders on
+smart_borders no_gaps
+
+# Increase brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 # Decrease brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
